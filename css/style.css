@@ -19,7 +19,7 @@
     margin-top: 57px;
 }
 
-.logo>p {
+.logo p {
     color: #fff; /* text color */
     font-family: "League Gothic";
     font-size: 48px;
@@ -27,7 +27,7 @@
     text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
 }
 
-span {
+.logo span {
     color: #533a5e; /* text color + gradient overlay */
     font-family: 'League Gothic';
     font-size: 48px;
@@ -67,18 +67,19 @@ span {
 
 }
 
-.row.slider {
-    background: rgba(0,0,0,0.2);
-}
 
-.title>h1 {
+/*.row.slider {
+    background: rgba(0,0,0,0.2);
+}*/
+
+.title h1 {
     color: #fefefe; /* text color */
     font-family: "League Gothic";
     font-size: 60px;
     text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
 }
 
-.title>p {
+.title p {
     color: #edbfff; /* text color */
     font-family: "League Gothic";
     font-size: 32px;
@@ -129,14 +130,14 @@ span {
     background-image: url("/img/icons.png");
 }
 
-.about1>h1, .about2>h1, .about3>h1 {
+.about1 h1, .about2 h1, .about3 h1 {
     color: #fff; /* text color */
     font-family: "League Gothic";
     font-size: 30px;
     text-shadow: 0 1px 0 #0e1418; /* drop shadow */
 }
 
-.about1>p, .about2>p, .about3>p {
+.about1 p, .about2 p, .about3 p {
     height: 104px;
     overflow: hidden; /* Обрезаем содержимое */
     color: #fff; /* text color */
@@ -145,7 +146,7 @@ span {
     text-shadow: 0 1px 0 #0e1418; /* drop shadow */
 }
 
-.about1>a, .about2>a, .about3>a {
+.about1 a, .about2 a, .about3 a {
     float: right;
     color: #fff; /* text color */
     font-family: "League Gothic";
@@ -154,7 +155,7 @@ span {
     text-decoration: none;
 }
 
-.about1>a:hover, .about2>a:hover, .about3>a:hover {
+.about1 a:hover, .about2 a:hover, .about3 a:hover {
     text-shadow: 0 0 8px rgba(255,255,255,.8);
 }
 
@@ -214,9 +215,6 @@ span {
     background-size: cover;
 }
 
-.row.footer {
-    height: 114px;
-}
 
 /*.container {
     border-right: solid 1px #000000;
@@ -226,13 +224,12 @@ span {
 .cssarrow {
     position: relative;
     background: #FFFFFF;
-    height: 200px;
     width: auto;
     word-wrap: break-word;
     -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
     box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
-    margin: 60px 60px;
+    margin: 90px 20px;
 
 }
 
@@ -243,7 +240,7 @@ span {
     position: absolute;
     display: block;
     margin-left: -25px;
-    margin-top: 10px;
+    margin-top: 18px;
     background-image: url("/img/menphoto.png");
 }
 
@@ -262,6 +259,183 @@ span {
     border-color: #ffffff transparent transparent transparent;
 }
 
-.cssarrow>p {
-    padding: 10px 50px;
+.cssarrow p {
+    padding: 0 40px 40px 40px;
+    color: #454545; /* text color */
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+
+}
+
+.cssarrow h1 {
+    color: #454545; /* text color */
+    font-family: "League Gothic";
+    font-size: 30px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+    padding-top: 32px;
+    padding-left: 40px;
+}
+
+.starts {
+    color: #edbfff; /* text color */
+    font-family: "League Gothic";
+    font-size: 30px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+.blog {
+    margin: 100px 10px 0 74px;
+}
+
+.blog h1 {
+    color: #454545; /* text color */
+    font-family: "League Gothic";
+    font-size: 30px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+    margin-left: -60px;
+}
+
+.blog a {
+    color: #454545; /* text color */
+    font-family: "League Gothic";
+    font-size: 18px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+    float: right;
+    text-decoration: none;
+}
+
+.blog a:hover {
+    text-shadow: 0 0 8px rgba(7,7,7,.8); /* drop shadow */;
+}
+
+.post1 h3, .post2 h3, .post3 h3 {
+    color: #454545; /* text color */
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+.post1 p, .post2 p, .post3 p {
+    height: 40px;
+    color: #454545; /* text color */
+    font-family: "OpenSans", sans-serif;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+    overflow: hidden
+}
+
+.post1:before, .post2::before, .post3::before {
+    height: 49px;
+    width: 49px;
+    content: "";
+    position: absolute;
+    display: block;
+    margin-left: -64px;
+    background-image: url("/img/blogimg.png");
+}
+
+.post2:before {
+    background-position: 0 98px;
+}
+
+
+.post3:before {
+    background-position: 0 49px;
+}
+
+.btcont2 h1, .btcont3 h1 {
+    color: #454545; /* text color */
+    font-family: "League Gothic";
+    font-size: 30px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+.btcont1, .btcont2, .btcont3 {
+    margin: 100px 0;
+}
+
+.btcont1 p {
+    height: 87px;
+    color: #454545; /* text color */
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+    overflow: hidden
+}
+
+.btcont2 p, .btcont3 p {
+    height: 156px;
+    color: #454545; /* text color */
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+    overflow: hidden
+}
+
+.ping p {
+    color: #454545; /* text color */
+    font-family: "League Gothic";
+    font-size: 48px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+
+.ping span {
+    color: #b8b8b8; /* text color */
+    font-family: "League Gothic";
+    font-size: 48px;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+i {
+    margin: 10px 0;
+}
+
+.btcont1 .copy {
+    margin: -27px 0 18px 0;
+    height: 100%;
+    color: #c5c5c5; /* text color */
+    font-family: "Georgia";
+    font-size: 16px;
+    font-style: italic;
+    text-shadow: 0 1px 0 #fff; /* drop shadow */
+}
+
+.footmenu {
+    margin: 50px 0 50px -76px;
+}
+
+
+.footmenu ul {
+    font-size: 0;
+}
+
+.footmenu li {
+    display: inline-block;
+    margin: 0 22px;
+}
+
+.footmenu a {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff; /* text color */
+    font-family: "League Gothic";
+    font-size: 20px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,.4); /* drop shadow */
+}
+
+.footmenu a:hover {
+    text-shadow: 0 0 8px rgba(255,255,255,.8);
+}
+
+.copyright {
+    float: right;
+    color: #fff; /* text color */
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 2px 2px rgba(0,0,0,.4); /* drop shadow */
+    margin: 60px -14px 50px 0;
+
 }
