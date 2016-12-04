@@ -5,10 +5,13 @@
     background-position: center;
     background-position: top;
     background-size: cover;
+    padding-bottom: 170px;
 }
 
 .container.head {
-    height: 846px;
+    height: 278px;
+    z-index: 1;
+    position: relative;
 }
 
 .row.header {
@@ -42,7 +45,6 @@
     box-sizing: border-box;
 }
 
-
 .mainmenu ul {
     font-size: 0;
 }
@@ -64,15 +66,124 @@
 
 .mainmenu li:hover {
     border-bottom: solid 2px #edbfff;
+}
 
+/*-- dropmenu --*/
+
+.dropmenu {
+    display: block;
+}
+
+.dropmenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropmenu a {
+    text-decoration: none;
+    outline: none;
+}
+
+.topmenu {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.topmenu li {
+    display: inline-block;
+    position: relative;
+    width: 210px;
+    height: 42px;
+
+}
+.topmenu > li > a{
+    color: #fff; /* text color */
+    font-family: "League Gothic";
+    border-bottom: solid 2px #edbfff;
+    font-size: 24px;
+    padding: 0 6px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.topmenu li:hover {
+    opacity: .9; /* layer alpha */
+    border: 1px solid #041016; /* stroke */
+    background: rgba(53,41,61,1);
+    -webkit-border-radius: 10px 10px 0 0;/*Safari, Chrome*/
+    -moz-border-radius: 10px 10px 0 0;/*Firefox*/
+    border-radius: 10px 10px 0 0;
+}
+
+.submenu {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    width: 210px;
+    top: 41px;
+    left: -1px;
+    -webkit-transform: scale(.8);
+    -moz-transform: scale(.8);
+    transform: scale(.8);
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
+}
+.submenu > li {
+    display: block;
+    opacity: 0.8; /* layer alpha */
+    border: 1px solid #041016; /* stroke */
+    background: rgba(53,41,61,1);
+}
+
+li:hover > .submenu {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    transform: scale(1);
+}
+.submenu li a {
+    color: #fff; /* text color */
+    font-family: "League Gothic";
+    font-size: 24px;
+    padding: 5px 0;
+    margin: 0 10px;
+    display: block;
+    text-transform: uppercase;
+}
+.submenu li:hover {
+    opacity: 1;
+    -webkit-border-radius: 0;/*Safari, Chrome*/
+    -moz-border-radius: 0;/*Firefox*/
+    border-radius: 0;
+    border-bottom: solid 2px #edbfff;
+}
+
+.bottom {
+    -webkit-border-radius: 0 0 10px 10px;/*Safari, Chrome*/
+    -moz-border-radius: 0 0 10px 10px;/*Firefox*/
+    border-radius: 0 0 10px 10px;
+}
+
+li .bottom:hover {
+    opacity: 1;
+    border-bottom: solid 2px #edbfff;
+    -webkit-border-radius: 0 0 10px 10px;/*Safari, Chrome*/
+    -moz-border-radius: 0 0 10px 10px;/*Firefox*/
+    border-radius: 0 0 10px 10px;
 }
 
 
-/*.row.slider {
-    background: rgba(0,0,0,0.2);
-}*/
+/*-- Slider --*/
 
-.title h1 {
+.slider {
+    background: rgba(0,0,0,0.2);
+}
+
+.title .lorem {
     color: #fefefe; /* text color */
     font-family: "League Gothic";
     font-size: 60px;
@@ -88,7 +199,7 @@
     overflow: hidden; /* Обрезаем содержимое */
 }
 
-.text {
+.text1 {
     color: #fefefe; /* text color */
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
@@ -99,6 +210,13 @@
 .iphone {
     margin-top: -18px;
     padding-left: 37px;
+    max-width: 434px;
+    min-width: 217px;
+    overflow: hidden;
+}
+
+.iphone img {
+    max-width: 100%;
 }
 
 .container-fluid.group1 {
@@ -111,13 +229,8 @@
     background-image: linear-gradient(bottom, #312539 0%, #745083 100%); /* gradient overlay */
 }
 
-.row.about {
-    padding-top: 70px;
-    padding-bottom: 70px
-}
-
 .about1, .about2, .about3 {
-    margin-left: 36px;
+    margin: 70px 0 70px 36px;
 }
 
 .about1::before, .about2::before, .about3::before {
@@ -215,12 +328,6 @@
     background-size: cover;
 }
 
-
-/*.container {
-    border-right: solid 1px #000000;
-    border-left: solid 1px #000000;
-}*/
-
 .cssarrow {
     position: relative;
     background: #FFFFFF;
@@ -230,7 +337,6 @@
     -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
     box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
     margin: 90px 20px;
-
 }
 
 .cssarrow::before {
@@ -265,7 +371,6 @@
     font-family: "OpenSans", sans-serif;
     font-size: 16px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
-
 }
 
 .cssarrow h1 {
@@ -340,7 +445,6 @@
     background-position: 0 98px;
 }
 
-
 .post3:before {
     background-position: 0 49px;
 }
@@ -381,7 +485,6 @@
     text-shadow: 0 1px 0 #fff; /* drop shadow */
 }
 
-
 .ping span {
     color: #b8b8b8; /* text color */
     font-family: "League Gothic";
@@ -404,12 +507,12 @@ i {
 }
 
 .footmenu {
-    margin: 50px 0 50px -76px;
+    margin: 50px 0 50px -20px;
 }
-
 
 .footmenu ul {
     font-size: 0;
+    padding: 0;
 }
 
 .footmenu li {
@@ -437,5 +540,99 @@ i {
     font-size: 12px;
     text-shadow: 1px 2px 2px rgba(0,0,0,.4); /* drop shadow */
     margin: 60px -14px 50px 0;
-
 }
+
+@media only screen and (max-width: 991px) {
+    .mainmenu {
+        float: left;
+        margin-left: -65px;
+        margin-top: 0;
+    }
+    .cssarrow::after {
+        display: none;
+    }
+    .text1 p {
+        height: 90px;
+    }
+    .copyright {
+        margin: 0 0 50px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .logo p {
+        text-align: center;
+    }
+    .title {
+        margin-top: 10px;
+    }
+    .title .lorem {
+        font-size: 50px;
+    }
+    .title p {
+        font-size: 28px;
+    }
+    .iphone {
+        max-width: 285px;
+        min-width: 180px;
+    }
+}
+
+@media only screen and (max-width: 607px) {
+    .footmenu {
+        margin: 50px auto;
+    }
+    .footmenu ul {
+        text-align: center;
+    }
+    .footmenu li {
+        margin: 0 8px;
+        display: inline-block;
+    }
+    .copyright {
+        float: none;
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+    .title .lorem {
+        font-size: 36px;
+    }
+    .title p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    .footmenu, .iphone {
+        display: none;
+    }
+
+    .copyright {
+        margin: 40px 0 100px 0;
+    }
+
+    .slider .col-xs-6 {
+        width: 100%;
+    }
+
+    .container.head {
+        height: 220px;
+    }
+
+    .slider {
+        background: none;
+    }
+
+    .title {
+        text-align: center;
+    }
+    .title .lorem {
+        margin-bottom: -10px;
+    }
+    .cssarrow p {
+        height: 154px;
+        overflow: hidden;
+    }
+}
+
+

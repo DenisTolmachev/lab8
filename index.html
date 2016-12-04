@@ -7,6 +7,7 @@
         <link href="css/style.css" rel="stylesheet">
         <link href="http://allfont.ru/allfont.css?fonts=league-gothic" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        <link rel="shortcut icon" href="http://brainacad.com/wp-content/uploads/2016/01/BA_new_icon_page.png">
 
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -27,7 +28,7 @@
                 </div>
             </div>
             <div class="col-lg-9 col-md-9 col-sm-12">
-                <div class="mainmenu">
+                <div class="mainmenu visible-lg visible-md visible-sm">
                     <ul>
                         <li><a href="#">HOME</a></li>
                         <li><a href="#">ABOUT</a></li>
@@ -37,23 +38,42 @@
                         <li><a href="#">DOLOR SIT AMET</a></li>
                     </ul>
                 </div>
+                <div class="dropmenu visible-xs">
+                        <ul class="topmenu">
+                            <li><a href="#">Home</a>
+                                <ul class="submenu">
+                                    <li><a href="#">About</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">Products</a></li>
+                                    <li><a href="#">Lorem ipsum</a></li>
+                                    <li class="bottom"><a href="#">dolor sit amet</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                </div>
             </div>
         </div>
-        <div class="row slider">
-            <div class="col-xs-6 col-sm-6 col-md-7">
-                <div class="title">
-                    <h1>Lorem Ipsum Dolor</h1>
-                    <p>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
-                </div>
-                <div class="text visible-lg visible-md visible-sm">
-                    <p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
+    </div>
+    <div class="container-fluid slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-7">
+                    <div class="title">
+                        <p class="lorem">Lorem Ipsum Dolor</p>
+                        <p>IT WILL MAKE ALL OF YOUR DREAMS COME TRUE</p>
+                    </div>
+                    <div class="text1 visible-lg visible-md visible-sm">
+                        <p>Semper sollicitudin gravida eget, vestibulum sit amet sapien. Nunc dignissim
                         tincidunt est, et auctor turpis ornare a. Nam venenatis hendrerit est at volutpat.
                         Morbi elementum euismod lacus id semper. In odio nunc, imperdiet eget aliquam quis,
                         euismod id lectus. Nulla interdum arcu et felis aliquam a tempus lectus lobortis.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-xs-6 col-sm-6 col-md-5">
-                <img class="iphone" src="img/iphone.png">
+                <div class="col-xs-6 col-sm-6 col-md-5">
+                    <div class="iphone">
+                    <img src="img/iphone.png" alt="picture">
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -98,7 +118,7 @@
         <div class="row content">
             <div class="col-md-6">
                 <div class="cssarrow">
-                    <h1>PINGBULLER<span class="starts">STARTS HERE</span></h1>
+                    <h1>PINGBULLER&nbsp;<span class="starts">STARTS HERE</span></h1>
                     <p>&#34Nunc turpis neque, feugiat eget eleifend et, lacinia non neque.
                         Praesent rhoncus ultrices posuere. Pellentesque vel lacus eget
                         nisi convallis auctor. Nam vitae lectus eu libero pellentesque
