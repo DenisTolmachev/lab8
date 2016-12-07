@@ -1,9 +1,11 @@
 @import "bootstrap.css";
 
+html {
+    overflow-x: hidden;
+}
+
 .container-fluid.head {
-    background-image: url("/img/bgheader.jpg");
-    background-position: center;
-    background-position: top;
+    background: url("/img/bgheader.jpg") center;
     background-size: cover;
     padding-bottom: 170px;
 }
@@ -24,15 +26,15 @@
 
 .logo p {
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 48px;
     letter-spacing: -0.6px;
-    text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3); /* drop shadow */
 }
 
 .logo span {
     color: #533a5e; /* text color + gradient overlay */
-    font-family: 'League Gothic';
+    font-family: "League Gothic", serif;
     font-size: 48px;
     letter-spacing: -0.6px;
 }
@@ -58,10 +60,10 @@
     display: inline-block;
     text-decoration: none;
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 24px;
     letter-spacing: -0.2px;
-    text-shadow: 1px 2px 2px rgba(0,0,0,.4); /* drop shadow */
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .4); /* drop shadow */
 }
 
 .mainmenu li:hover {
@@ -97,11 +99,11 @@
     position: relative;
     width: 210px;
     height: 42px;
-
 }
-.topmenu > li > a{
+
+.topmenu > li > a {
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     border-bottom: solid 2px #edbfff;
     font-size: 24px;
     padding: 0 6px;
@@ -112,9 +114,9 @@
 .topmenu li:hover {
     opacity: .9; /* layer alpha */
     border: 1px solid #041016; /* stroke */
-    background: rgba(53,41,61,1);
-    -webkit-border-radius: 10px 10px 0 0;/*Safari, Chrome*/
-    -moz-border-radius: 10px 10px 0 0;/*Firefox*/
+    background: rgba(53, 41, 61, 1);
+    -webkit-border-radius: 10px 10px 0 0; /*Safari, Chrome*/
+    -moz-border-radius: 10px 10px 0 0; /*Firefox*/
     border-radius: 10px 10px 0 0;
 }
 
@@ -131,11 +133,12 @@
     -webkit-transition: .4s ease-in-out;
     transition: .4s ease-in-out;
 }
+
 .submenu > li {
     display: block;
     opacity: 0.8; /* layer alpha */
     border: 1px solid #041016; /* stroke */
-    background: rgba(53,41,61,1);
+    background: rgba(53, 41, 61, 1);
 }
 
 li:hover > .submenu {
@@ -145,56 +148,57 @@ li:hover > .submenu {
     -moz-transform: scale(1);
     transform: scale(1);
 }
+
 .submenu li a {
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 24px;
     padding: 5px 0;
     margin: 0 10px;
     display: block;
     text-transform: uppercase;
 }
+
 .submenu li:hover {
     opacity: 1;
-    -webkit-border-radius: 0;/*Safari, Chrome*/
-    -moz-border-radius: 0;/*Firefox*/
+    -webkit-border-radius: 0; /*Safari, Chrome*/
+    -moz-border-radius: 0; /*Firefox*/
     border-radius: 0;
     border-bottom: solid 2px #edbfff;
 }
 
 .bottom {
-    -webkit-border-radius: 0 0 10px 10px;/*Safari, Chrome*/
-    -moz-border-radius: 0 0 10px 10px;/*Firefox*/
+    -webkit-border-radius: 0 0 10px 10px; /*Safari, Chrome*/
+    -moz-border-radius: 0 0 10px 10px; /*Firefox*/
     border-radius: 0 0 10px 10px;
 }
 
 li .bottom:hover {
     opacity: 1;
     border-bottom: solid 2px #edbfff;
-    -webkit-border-radius: 0 0 10px 10px;/*Safari, Chrome*/
-    -moz-border-radius: 0 0 10px 10px;/*Firefox*/
+    -webkit-border-radius: 0 0 10px 10px; /*Safari, Chrome*/
+    -moz-border-radius: 0 0 10px 10px; /*Firefox*/
     border-radius: 0 0 10px 10px;
 }
-
 
 /*-- Slider --*/
 
 .slider {
-    background: rgba(0,0,0,0.2);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 .title .lorem {
     color: #fefefe; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 60px;
-    text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3); /* drop shadow */
 }
 
 .title p {
     color: #edbfff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 32px;
-    text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3); /* drop shadow */
     white-space: nowrap; /* Отменяем перенос текста */
     overflow: hidden; /* Обрезаем содержимое */
 }
@@ -203,7 +207,7 @@ li .bottom:hover {
     color: #fefefe; /* text color */
     font-family: 'Open Sans', sans-serif;
     font-size: 18px;
-    text-shadow: 0 2px 2px rgba(0,0,0,.3); /* drop shadow */
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3); /* drop shadow */
     overflow: hidden; /* Обрезаем содержимое */
 }
 
@@ -245,7 +249,7 @@ li .bottom:hover {
 
 .about1 h1, .about2 h1, .about3 h1 {
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 30px;
     text-shadow: 0 1px 0 #0e1418; /* drop shadow */
 }
@@ -262,14 +266,14 @@ li .bottom:hover {
 .about1 a, .about2 a, .about3 a {
     float: right;
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 18px;
     text-shadow: 0 1px 0 #0e1418; /* drop shadow */
     text-decoration: none;
 }
 
 .about1 a:hover, .about2 a:hover, .about3 a:hover {
-    text-shadow: 0 0 8px rgba(255,255,255,.8);
+    text-shadow: 0 0 8px rgba(255, 255, 255, .8);
 }
 
 .about2::before {
@@ -314,17 +318,15 @@ li .bottom:hover {
 
 .container-fluid.group3 {
     background-color: #ececec;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=84, Color=#000000)";/*IE 8*/
-    -moz-box-shadow: -1px 10px 16px -8px rgba(0,0,0,0.5);/*FF 3.5+*/
-    -webkit-box-shadow: -1px 10px 16px -8px rgba(0,0,0,0.5);/*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
-    box-shadow: -1px 10px 16px -8px rgba(0,0,0,0.5);/* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=84, Color=#000000)"; /*IE 8*/
+    -moz-box-shadow: -1px 10px 16px -8px rgba(0, 0, 0, 0.5); /*FF 3.5+*/
+    -webkit-box-shadow: -1px 10px 16px -8px rgba(0, 0, 0, 0.5); /*Saf3-4, Chrome, iOS 4.0.2-4.2, Android 2.3+*/
+    box-shadow: -1px 10px 16px -8px rgba(0, 0, 0, 0.5); /* FF3.5+, Opera 9+, Saf1+, Chrome, IE10 */
     filter: progid:DXImageTransform.Microsoft.Shadow(Strength=16, Direction=135, Color=#000000); /*IE 5.5-7*/
 }
 
 .container-fluid.footer {
-    background-image: url("/img/bgfooter.jpg");
-    background-position: center;
-    background-position: top;
+    background: url("/img/bgfooter.jpg") top;
     background-size: cover;
 }
 
@@ -333,9 +335,9 @@ li .bottom:hover {
     background: #FFFFFF;
     width: auto;
     word-wrap: break-word;
-    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
-    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
-    box-shadow: 0 1px 2px rgba(0,0,0,.05); /* drop shadow */
+    -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, .05); /* drop shadow */
+    -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, .05); /* drop shadow */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05); /* drop shadow */
     margin: 90px 20px;
 }
 
@@ -358,10 +360,10 @@ li .bottom:hover {
     width: 0;
     position: absolute;
     pointer-events: none;
-    margin-right: 0px;
-    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    margin-right: 0;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
     border-style: solid;
-    border-width: 30px 0px 0 45px;
+    border-width: 30px 0 0 45px;
     border-color: #ffffff transparent transparent transparent;
 }
 
@@ -375,7 +377,7 @@ li .bottom:hover {
 
 .cssarrow h1 {
     color: #454545; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 30px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
     padding-top: 32px;
@@ -384,7 +386,7 @@ li .bottom:hover {
 
 .starts {
     color: #edbfff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 30px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
 }
@@ -395,7 +397,7 @@ li .bottom:hover {
 
 .blog h1 {
     color: #454545; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 30px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
     margin-left: -60px;
@@ -403,7 +405,7 @@ li .bottom:hover {
 
 .blog a {
     color: #454545; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 18px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
     float: right;
@@ -411,7 +413,7 @@ li .bottom:hover {
 }
 
 .blog a:hover {
-    text-shadow: 0 0 8px rgba(7,7,7,.8); /* drop shadow */;
+    text-shadow: 0 0 8px rgba(7, 7, 7, .8); /* drop shadow */;
 }
 
 .post1 h3, .post2 h3, .post3 h3 {
@@ -451,7 +453,7 @@ li .bottom:hover {
 
 .btcont2 h1, .btcont3 h1 {
     color: #454545; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 30px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
 }
@@ -480,14 +482,14 @@ li .bottom:hover {
 
 .ping p {
     color: #454545; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 48px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
 }
 
 .ping span {
     color: #b8b8b8; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 48px;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
 }
@@ -500,7 +502,7 @@ i {
     margin: -27px 0 18px 0;
     height: 100%;
     color: #c5c5c5; /* text color */
-    font-family: "Georgia";
+    font-family: "Georgia", serif;
     font-size: 16px;
     font-style: italic;
     text-shadow: 0 1px 0 #fff; /* drop shadow */
@@ -524,13 +526,13 @@ i {
     display: inline-block;
     text-decoration: none;
     color: #fff; /* text color */
-    font-family: "League Gothic";
+    font-family: "League Gothic", serif;
     font-size: 20px;
-    text-shadow: 1px 2px 2px rgba(0,0,0,.4); /* drop shadow */
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .4); /* drop shadow */
 }
 
 .footmenu a:hover {
-    text-shadow: 0 0 8px rgba(255,255,255,.8);
+    text-shadow: 0 0 8px rgba(255, 255, 255, .8);
 }
 
 .copyright {
@@ -538,7 +540,7 @@ i {
     color: #fff; /* text color */
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    text-shadow: 1px 2px 2px rgba(0,0,0,.4); /* drop shadow */
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, .4); /* drop shadow */
     margin: 60px -14px 50px 0;
 }
 
@@ -548,12 +550,15 @@ i {
         margin-left: -65px;
         margin-top: 0;
     }
+
     .cssarrow::after {
         display: none;
     }
+
     .text1 p {
         height: 90px;
     }
+
     .copyright {
         margin: 0 0 50px 0;
     }
@@ -563,15 +568,19 @@ i {
     .logo p {
         text-align: center;
     }
+
     .title {
         margin-top: 10px;
     }
+
     .title .lorem {
         font-size: 50px;
     }
+
     .title p {
         font-size: 28px;
     }
+
     .iphone {
         max-width: 285px;
         min-width: 180px;
@@ -582,21 +591,26 @@ i {
     .footmenu {
         margin: 50px auto;
     }
+
     .footmenu ul {
         text-align: center;
     }
+
     .footmenu li {
         margin: 0 8px;
         display: inline-block;
     }
+
     .copyright {
         float: none;
         margin: 0 0 50px 0;
         text-align: center;
     }
+
     .title .lorem {
         font-size: 36px;
     }
+
     .title p {
         font-size: 18px;
     }
@@ -626,13 +640,13 @@ i {
     .title {
         text-align: center;
     }
+
     .title .lorem {
         margin-bottom: -10px;
     }
+
     .cssarrow p {
         height: 154px;
         overflow: hidden;
     }
 }
-
-
